@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymfit Signup</title>
+    <link rel="stylesheet" href="gymform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div class="main">
+            <h1>Sign Up Now</h1>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbxvF5tXjcYINWI_4vXVq0BxEhYYzzATUIJKlmkXlH1E_dq4_F_Lr6NEHLFXuuHu7SiPGg/exec" name="gymform" >
+                <div class="form-box">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="your_name" id="Name">
+                </div>
+                <div class="form-box">
+                    <label for="Roll No.">Roll No.:</label>
+                    <input type="text" name="your_roll_no" id="Roll No.">
+                </div>
+                <div class="form-box">
+                    <label for="Group">Group:</label>
+                    <select name="Group" id="Group">
+                        <option value="select">Select</option>
+                        <option value="G1">G1</option>
+                        <option value="G2">G2</option>
+                        <option value="G3">G3</option>
+                        <option value="G4">G4</option>
+                        <option value="G5">G5</option>
+                        <option value="G6">G6</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <label>Course:</label>
+                    <input type="radio" name="course" value="CSE" id="cse"> CSE
+                    <input type="radio" name="course" value="CSE AI" id="cseai"> CSE AI
+                    <input type="radio" name="course" value="BBA" id="bba"> BBA
+                    <input type="radio" name="course" value="B.Pharm" id="bpharm"> B.Pharm
+                </div>
+                <div class="form-box">
+                    <label for="Age">Age:</label>
+                    <input type="text" name="age" id="age">
+                </div>
+                <div class="form-box">
+                    <label>Plan:</label>
+                    <input type="radio" name="plans" value="1 month" id="1Month"> 1 Month
+                    <input type="radio" name="plans" value="3 Months" id="3Months"> 3 Months
+                    <input type="radio" name="plans" value="6 months" id="6Months"> 6 Months
+                    <input type="radio" name="plans" value="1 year" id="1Year"> 1 Year
+                </div>
+                <div class="form-box">
+                    <label>Accommodation:</label>
+                    <input type="radio" name="living" value="Hosteller" id="Hosteller"> Hosteller
+                    <input type="radio" name="living" value="Day Scholar" id="DayScholar"> Day Scholar
+                </div>
+                <div class="form-box">
+                    <label for="Timings">Timings:</label>
+                    <input type="text" name="time" id="time">
+                </div>
+                <div class="form-box">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <script>
+        const scriptURL = 'https://script.googleusercontent.com/macros/echo?user_content_key=wJjXEFQMyIK_f-iXzSjnMnLdUtA7PoSqUeo-Y6LJkiIhh1Km6qAtZBqcTQTQtfxAdkMDgRAYPZxIlZMerSiBQN44tWm8z0H3m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGSmOXuWnyxBC6X9X8B4PIAT5uoCB1DsuT-HUB11MfN8H88uP_Q5ygenwYUR1ylI2aMeidlxKTM8ZUSFRbh-AJorwZEz6QX0Gdz9Jw9Md8uu&lib=M9zJAE9haOfrk2n8YdAAW6br-RBH74-_F';
+        const form = document.forms['gymform'];
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Collect form data
+            const formData = new FormData(form);
+
+            // Send the form data to the Google Apps Script (skip validation)
+            fetch(scriptURL, {
+                method: 'POST',
+                body: formData, // Send the form data to the Google Apps Script
+            })
+            .then((response) => {
+                if (response.ok) {
+                    alert("Your form has been submitted successfully."); // Success message
+                    form.reset(); // Reset the form after successful submission
+                } else {
+                    throw new Error("Submission failed"); // Handle failed submission
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error.message); // Log error if submission fails
+                alert("There was an error submitting your form. Please try again.");
+            });
+        });
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{background-image: url(empty-wooden-table-blur-modern-600nw-2320553067.webp) ;background-size: cover;background-repeat: no-repeat;}
+.main{box-shadow: 1px 3px 3px white;display: flex;justify-content: center;border: 2px solid white;width: 23rem;height: 43rem;justify-self: center;justify-items: center;align-self: center;align-content: center;margin-left: 38%;flex-flow: column;background-color: #00000061;color: white;text-shadow: red 1px 1px 2px;}
+.form-box{padding: 2%;padding-left: 4%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;font-size: 130%;
+  }
+.form-box label {display: block;}
+.form-box input{background-color: rgba(128, 128, 128, 0.473);color: white;}
+h1{padding-left: 25%; text-decoration: underline;}
+.form-box input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-box input[type="submit"]:hover {
+  background-color: #218838;
+}
+.form-box input[type="text"] {width: 90%;}
+.form-box select {background-color: rgba(0, 0, 0, 0.475);color: white;width: 5vw;}
+
+
+
+
+

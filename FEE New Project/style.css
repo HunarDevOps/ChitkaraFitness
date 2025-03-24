@@ -1,0 +1,315 @@
+*{margin: 0;padding: 0;}
+.heading{background-color: black; color: white;height: 18vh; padding: 1%;}
+#cu{font-size: 400% ;padding-left: 9vw;position: relative;top: 2vh;text-shadow: rgb(255, 255, 255) 1px 1px 5px; ;}
+#culogo{position: absolute;left: 2%;top: 5%;}
+.content{display: flex;flex-wrap: wrap;justify-content: space-evenly;margin-top: 10vh;}
+body{background-color: black;}
+.running {
+    align-self: self-start;
+    padding: 0%;
+    padding-left: 5%;
+    position: relative;
+    width: 350.1px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.running:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.main-img {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.running:hover .hover-content {
+    display: flex;
+    opacity: 1;
+}
+
+.running:hover .main-img {
+    opacity: 0;
+}
+
+.running:hover .textrun {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-content p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-height: 100%;
+    white-space: normal;
+    margin: 0;
+}
+
+.running:hover .hover-content p {
+    opacity: 1;
+}
+.hover-content p{width: 20vw;text-align: left;height: 30vw;}
+.hover-content2 p{width: 20vw;text-align: left;}
+.hover-content3 p{width: 15vw;text-align: left;height: 25vw;position: relative;right: 2vw;}
+.hover-content4 p{width: 23vw;text-align: left;}
+.hover-content5 p{width: 25vw;text-align: left;}
+.textrun {
+    position: absolute;
+    left: 9%;
+    bottom: 9vh;
+    color: white;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.running:hover .textrun {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.workathome:hover .workat {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.workathome:hover .home {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.workathome {align-self: center; padding: 6%;padding-left: 2%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.workathome:hover {
+    transform: scale(1.2);
+}
+.hover-content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.workathome:hover .hover-content2 {
+    display: flex;
+    opacity: 1;
+}
+.gym:hover .gymtext {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-content3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gym:hover .hover-content3 {
+    display: flex;
+    opacity: 1;
+}
+.band:hover .bandtext {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-content4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.band:hover .hover-content4 {
+    display: flex;
+    opacity: 1;
+}
+.sports:hover #sporttext {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-content5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sports:hover .hover-content5 {
+    display: flex;
+    opacity: 1;
+}
+.band {
+    transition: transform 0.3s ease-in-out; padding-top:5%;padding-left: 2.5%;padding-right: 5%;margin-right: 9%;margin-left: 1%;
+}
+
+.band:hover {
+    transform: scale(1.2);
+}
+.sports {
+    transition: transform 0.3s ease-in-out;padding-top: 5%; padding-bottom: 2%;bottom: 2%;margin-right:2vw;
+}
+
+.sports:hover {
+    transform: scale(1.2);
+}
+.heart {
+    transition: transform 0.3s ease-in-out; padding-left: 3%;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+.gym {
+    transition: transform 0.3s ease-in-out;
+}
+
+.gym:hover {
+    transform: scale(1.2);
+}
+.textrun{position:relative;font-size: 250%;color: white;position: relative;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal; text-shadow: 1px 1px 3px;
+    
+  }
+  .workat{position:relative;font-size: 250%;color: white;position: relative;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal; text-shadow: 1px 1px 3px;
+    
+  }
+  .home{position:relative;font-size: 250%;color: white;position: relative;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal; text-shadow: 1px 1px 3px;
+    
+  }
+
+  .gymtext{position:relative;font-size: 250%;color: white;position: relative;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal; text-shadow: 1px 1px 3px;
+    
+  }
+  .dailytasks{overflow-y: hidden;overflow-x: auto;white-space: nowrap;}
+  .d1{width: 200px;background-color: #d31111;border-color: #ffffff;border-width: 2px;}
+  .bandtext{position:relative;font-size: 250%;color: white;position: relative;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal; text-shadow: 1px 1px 3px;padding: 0%;margin: 0%;}
+#sporttext{position:relative;font-size: 250%;color: white;position: relative;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal; text-shadow: 1px 1px 3px;padding: 0%;margin: 0%;}
+
+    footer {
+        text-align: center;
+        padding: 40px 0;
+        background: linear-gradient(135deg, #363333a5, #625f5f); 
+        position: relative;
+        border-top: 5px solid #2b2c2d; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        z-index: 1; 
+        margin-top: 20vh;
+    }
+    
+    footer img {
+        width: 80px; 
+        position: absolute;
+        bottom: 80px; 
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%; 
+        border: 5px solid #2b2c2d; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 0 0;
+    }
+    
+    ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #d00000c3; 
+        font-weight: bold; 
+        transition: color 0.3s, transform 0.3s; 
+    }
+    
+    ul li a:hover {
+        color: #ffffff; 
+        transform: translateY(-3px); 
+    }
+    
